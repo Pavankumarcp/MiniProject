@@ -22,5 +22,8 @@ namespace MiniProject.Controllers
             var prdDetails = _context.ProductDetails.ToList();
             return View(prdDetails);
         }
+        public ActionResult Create()
+        { 
+        }
     }
 }
