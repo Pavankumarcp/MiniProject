@@ -134,6 +134,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301211747282_Intial_CreateStore.cs" />
+    <Compile Include="Migrations\202301211747282_Intial_CreateStore.designer.cs">
+      <DependentUpon>202301211747282_Intial_CreateStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Categoryddl.cs" />
     <Compile Include="Models\PackSizeddl.cs" />
@@ -195,6 +200,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202301211747282_Intial_CreateStore.resx">
+      <DependentUpon>202301211747282_Intial_CreateStore.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

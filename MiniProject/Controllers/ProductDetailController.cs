@@ -1,5 +1,4 @@
-﻿
-using MiniProject.Models;
+﻿using MiniProject.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
