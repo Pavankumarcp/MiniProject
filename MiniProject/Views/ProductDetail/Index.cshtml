@@ -1,0 +1,36 @@
+﻿@model List<MiniProject.Models.ProductDetail>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List Of Vegitables and Fruits</h2>
+<dic class="row">
+    <div class="col-md-4">
+        <table class="table table-hover table-bordered">
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>PackSize</th>
+                <th>Qnantity</th>
+                <th>Discount</th>
+                <th>Total Price</th>
+                <th>Category</th>
+            </tr>
+            @foreach(var p in Model)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.ProductName</td>
+                    <td>@p.Price</td>
+                    <td>@p.Quantity</td>
+                    <td>@p.Discount</td>
+                    <td>@p.TotalPrice</td>
+                </tr>
+            }
+        </table>
+    </div>
+</dic>
+
